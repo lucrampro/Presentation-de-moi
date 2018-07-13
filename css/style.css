@@ -30,7 +30,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
@@ -38,51 +38,93 @@
 /* ///// STYLE DU SITE ///// */
 
 body {
-    height: 100vh;
-    display: flex;
+    height: 99%;
+    background: #fdf2d2;
+/*    background: #fefefe;*/
+
+}
+
+span {
+    color: #fe4d4d;
 }
 
 /* ///// BLOC DE GAUCHE ///// */
 
 .img {
 
-    height: 100vh;
-    width: 50%;
+    height: 50%;
+    width: 100%;
+    display: none;
 }
 
 .img img {
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
 /* ///// BLOC DE DROITE ///// */
 
-.contenu {
-
-    height: 100vh;
-    width: 50%;
-}
-
-span {
-
-    color: #fe4d4d;
-}
-
 .contenu h1 {
 
-    font-family: 'lostinwild';
-    color: #fe4d4d;
     text-align: center;
-    margin-top: 100px;
-    font-size: 5rem;
-    grid-column: 1 / 4;
-    grid-row: 1;
+    font-family: 'lostinwild';
+    margin-top: 25%;
+    font-size: 10rem;
+    color: #fe4d4d;
+
 }
 
-.contenu p {
+.contenu .txt1 {
+
+    width: 80%;
+    margin: auto;
 
     font-family: 'helveticaCB';
-    grid-column: 1 / 4;
-    grid-row: 2;
+    font-size: 3.5rem;
+    margin-top: 100px;
+
 }
+
+.contenu .txt2 {
+
+     width: 80%;
+
+    font-family: 'helveticaCB';
+    font-size: 2.3rem;
+    margin: 50px auto 0 auto;
+
+
+}
+
+.contenu .js {
+    text-align: center;
+    font-family: 'helveticaCB';
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 9rem;
+    line-height: 150px;
+    
+
+
+}
+
+.contenu .jss {
+       font-size: 9.5rem;
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
