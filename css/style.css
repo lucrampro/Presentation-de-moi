@@ -25,6 +25,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'helveticaT';
+    src: url('font/HelveticaNeue-Thin.ttf');
+    src: url('font/HelveticaNeue-Thin.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ///// GRID ///// */
 
 .grid {
@@ -38,9 +46,18 @@
 /* ///// STYLE DU SITE ///// */
 
 body {
-    height: 99%;
-    background: #fdf2d2;
-/*    background: #fefefe;*/
+    height: 100vh;
+    background: #fefefe;
+
+
+}
+
+@media all and (min-width: 1000px) {
+
+    body {
+
+        display: flex;
+    }
 
 }
 
@@ -52,8 +69,7 @@ span {
 
 .img {
 
-    height: 50%;
-    width: 100%;
+    position: relative;
     display: none;
 }
 
@@ -63,33 +79,96 @@ span {
     width: 100%;
 }
 
+/* ///// IMAGE RESPONSIVE 1 ////// */
+
+@media all and (min-width: 1000px) {
+
+
+    .img {
+
+        display: inherit;
+        height: 100vh;
+        width: 50%;
+    }
+
+    .img img {
+
+        height: 100vh;
+        width: 100%;
+    }
+
+}
+
 /* ///// BLOC DE DROITE ///// */
+
+@media all and (min-width: 1000px) {
+
+    .contenu {
+
+        width: 50%;
+        height: 100vh;
+    }
+
+}
+
+
+/*H1*/
 
 .contenu h1 {
 
     text-align: center;
     font-family: 'lostinwild';
-    margin-top: 25%;
     font-size: 10rem;
     color: #fe4d4d;
+    margin-top: 10%;
+    transition: 2s;
 
 }
+
+/* ///// H1 BREACKPOINT 1 ///// */
+
+@media all and (min-width: 1000px) {
+
+    .contenu h1 {
+
+        font-size: 4rem;
+        margin-top: 20%;
+    }
+
+
+}
+
+/* ///// txt1 ///// */
 
 .contenu .txt1 {
 
     width: 80%;
     margin: auto;
-
     font-family: 'helveticaCB';
     font-size: 3.5rem;
     margin-top: 100px;
 
 }
 
+/* ///// txt1 BREAKPOINT 1 ///// */
+
+@media all and (min-width: 1000px) {
+
+    .contenu .txt1 {
+
+        font-size: 2rem;
+        margin: auto 0 auto;
+        width: 100%;
+    }
+
+}
+
+/* ///// txt2 ///// */
+
 .contenu .txt2 {
 
-     width: 80%;
-
+    width: 80%;
+    opacity: 0.6;
     font-family: 'helveticaCB';
     font-size: 2.3rem;
     margin: 50px auto 0 auto;
@@ -97,34 +176,129 @@ span {
 
 }
 
+/* ///// txt2 BREAK POINT 1 ///// */
+
+@media all and (min-width: 1000px) {
+
+    .contenu .txt2 {
+
+        font-size: 1rem;
+        margin: auto 0 auto;
+        width: 100%;
+    }
+
+
+}
+
+/* ////// js ////// */
+
 .contenu .js {
+
     text-align: center;
     font-family: 'helveticaCB';
     text-transform: uppercase;
-    width: 100%;
-    margin: auto;
+    max-width: 80%;
+    margin: 0 auto 0 auto;
     margin-top: 50px;
     font-size: 9rem;
-    line-height: 150px;
-    
+    line-height: 120px;
+
 
 
 }
+
+/* ///// JS BREACK POINT 1 ///// */
+
+@media all and (min-width: 1000px) {
+
+    .contenu .js {
+
+        font-size: 3.7rem;
+        line-height: 50px;
+        margin: 50px auto auto auto;
+        width: 100%;
+
+
+
+
+    }
+
+}
+
+/* ////// JSS ///// */
 
 .contenu .jss {
-       font-size: 9.5rem;
-    
+    font-size: 10rem;
+
+}
+
+
+/* ///// JSS BREACK POINT 1 ///// */
+
+@media all and (min-width: 1000px) {
+
+    .contenu .jss {
+
+        font-size: 4rem;
+
+    }
+
+}
+
+/* ////// DIV COLOR ///// */
+
+.color {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fe4d4d;
+    z-index: 99999;
 
 
 }
 
 
 
+/* ///// DIV CACHE ///// */
+
+.cacheTitre,
+.cacheTexte1,
+.cacheTexte2,
+.cacheJS {
+
+    position: relative;
+
+}
 
 
 
+/* ///// cacheTexte1 ///// */
+
+.cacheTexte1 {
+
+    width: 80%;
+    margin: auto;
+}
+
+/* ///// .cacheTexte2 ///// */
+
+.cacheTexte2 {
+
+
+    width: 80%;
+    margin: 20px auto auto auto;
+
+}
+
+/* ////// cacheJS ///// */
+
+.cacheJS {
+
+    width: 80%;
+    margin: 20px auto auto auto;
 
 
 
-
-
+}
