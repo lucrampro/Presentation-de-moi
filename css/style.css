@@ -1,0 +1,88 @@
+/* ///// FONTS ///// */
+
+@font-face {
+    font-family: 'lostinwild';
+    src: url('font/LostinWild.ttf');
+    src: url('font/LostinWild.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('font/HelveticaNeue.ttf');
+    src: url('font/HelveticaNeue.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaCB';
+    src: url('font/HelveticaNeueCondensedBold.ttf');
+    src: url('font/HelveticaNeueCondensedBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ///// GRID ///// */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* ///// STYLE DU SITE ///// */
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+/* ///// BLOC DE GAUCHE ///// */
+
+.img {
+
+    height: 100vh;
+    width: 50%;
+}
+
+.img img {
+
+    height: 100vh;
+    width: 100%;
+}
+
+/* ///// BLOC DE DROITE ///// */
+
+.contenu {
+
+    height: 100vh;
+    width: 50%;
+}
+
+span {
+
+    color: #fe4d4d;
+}
+
+.contenu h1 {
+
+    font-family: 'lostinwild';
+    color: #fe4d4d;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 5rem;
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.contenu p {
+
+    font-family: 'helveticaCB';
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
