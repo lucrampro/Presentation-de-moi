@@ -10,9 +10,10 @@ TweenMax.to(".trais5",0.3,{top:"100%", height:"0", onComplete:function(){
     TweenMax.to(".volet3",0.5,{width:"0"});
     TweenMax.to(".volet4",0.5,{width:"0"});
     TweenMax.to(".volet5",0.5,{width:"0", onComplete: function(){
-        
+//        LES BLOC DE COULERU APPARAISSE
         TweenMax.to(".img",0.5,{width:"50%"});                
         TweenMax.to(".cacheTexte1",0.5,{width:"80%", onComplete(){
+//            L'IMAGE ET LE TEXTE SE DEVOILE
         TweenMax.to(".colorimg",0.5,{width:"0"});
         TweenMax.to(".colortxt1",0.5,{width:"0"});
         TweenMax.to("h1",0.5,{opacity:"1"});
