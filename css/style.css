@@ -44,10 +44,14 @@
 }
 
 /* ///// STYLE DU SITE ///// */
+html{
+    position: relative;
+}
 
 body {
     height: 100vh;
     background: #fefefe;
+    position: absolute;
 
 
 }
@@ -71,12 +75,14 @@ span {
 
     position: relative;
     display: none;
+            
 }
 
 .img img {
 
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 /* ///// IMAGE RESPONSIVE 1 ////// */
@@ -88,7 +94,9 @@ span {
 
         display: inherit;
         height: 100vh;
-        width: 50%;
+        width: 0%;
+        overflow: hidden;
+       
     }
 
     .img img {
@@ -99,6 +107,8 @@ span {
 
 }
 
+
+
 /* ///// BLOC DE DROITE ///// */
 
 @media all and (min-width: 1000px) {
@@ -107,6 +117,8 @@ span {
 
         width: 50%;
         height: 100vh;
+        position: absolute;
+        right: 0;
     }
 
 }
@@ -120,23 +132,25 @@ span {
     font-family: 'lostinwild';
     font-size: 10rem;
     color: #fe4d4d;
-    margin-top: 10%;
-    transition: 2s;
+    margin-top: 25%;
+    opacity: 1;
 
 }
 
-/* ///// H1 BREACKPOINT 1 ///// */
 
-@media all and (min-width: 1000px) {
-
-    .contenu h1 {
-
-        font-size: 4rem;
-        margin-top: 20%;
+@media all and (min-width: 1000px){
+    
+    
+    .contenu h1{
+        
+        font-size: 5rem;
+     margin-top: 20%; 
+        opacity: 0;
+        
     }
-
-
+    
 }
+
 
 /* ///// txt1 ///// */
 
@@ -150,45 +164,36 @@ span {
 
 }
 
-/* ///// txt1 BREAKPOINT 1 ///// */
+.cacheTexte1{
+    
+    width: 100%;
+}
 
-@media all and (min-width: 1000px) {
-
+@media all and (min-width: 1000px){
+    
+    
+    
     .contenu .txt1 {
-
+        
+        
         font-size: 2rem;
-        margin: auto 0 auto;
-        width: 100%;
+        margin-top: 0;
+        width: 400px;
+        
     }
-
-}
-
-/* ///// txt2 ///// */
-
-.contenu .txt2 {
-
-    width: 80%;
-    opacity: 0.6;
-    font-family: 'helveticaCB';
-    font-size: 2.3rem;
-    margin: 50px auto 0 auto;
-
-
-}
-
-/* ///// txt2 BREAK POINT 1 ///// */
-
-@media all and (min-width: 1000px) {
-
-    .contenu .txt2 {
-
-        font-size: 1rem;
-        margin: auto 0 auto;
-        width: 100%;
+    
+    
+    .cacheTexte1{
+        
+        position: absolute;
+        margin-left: 15%;
+        width: 0;
+        overflow: hidden;
     }
-
-
+    
+    
 }
+
 
 /* ////// js ////// */
 
@@ -207,25 +212,6 @@ span {
 
 }
 
-/* ///// JS BREACK POINT 1 ///// */
-
-@media all and (min-width: 1000px) {
-
-    .contenu .js {
-
-        font-size: 3.7rem;
-        line-height: 50px;
-        margin: 50px auto auto auto;
-        width: 100%;
-
-
-
-
-    }
-
-}
-
-/* ////// JSS ///// */
 
 .contenu .jss {
     font-size: 10rem;
@@ -233,72 +219,174 @@ span {
 }
 
 
-/* ///// JSS BREACK POINT 1 ///// */
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1000px){
+    
+    
+    .contenu .js{
+        
 
-    .contenu .jss {
-
-        font-size: 4rem;
-
+    font-size: 5rem;
+    line-height: 80px;
+        opacity: 0;
+     
     }
-
+    
+    .contenu .jss{
+        
+        font-size: 6rem;
+    }
+    
+    .cacheJS{
+        
+        width: 100%;
+        position: absolute;
+        top: 60%;
+    }
+    
 }
+
+
 
 /* ////// DIV COLOR ///// */
 
-.color {
+.colorimg, .colortxt1, .colortxt2, .colorjs  {
+
+    position: absolute;
+    height:100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background: #fe4d4d;
+    z-index: 10;
+    opacity: 1;
+
+
+}
+
+
+.colortxt2{
+    
+   height: 85%;
+    right: 20%;
+    width: 80%;
+    opacity: 0;
+    
+}
+
+
+/* ///// VOLET ////// */
+
+
+.volet {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 0;
+    top: 0;
+    background: #fe4d4d;
+
+
+}
+
+.volet2 {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 20%;
+    top: 0;
+    background: #fe4d4d;
+
+
+}
+
+.volet3 {
 
     position: absolute;
     height: 100%;
-    width: 100%;
-    left: 0;
+    width: 20%;
+    left: 40%;
+    top: 0;
     background: #fe4d4d;
-    z-index: 99999;
+
+}
+
+.volet4 {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 60%;
+    top: 0;
+    background: #fe4d4d;
 
 
 }
 
+.volet5 {
 
-
-/* ///// DIV CACHE ///// */
-
-.cacheTitre,
-.cacheTexte1,
-.cacheTexte2,
-.cacheJS {
-
-    position: relative;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 80%;
+    top: 0;
+    background: #fe4d4d;
 
 }
 
-
-
-/* ///// cacheTexte1 ///// */
-
-.cacheTexte1 {
-
-    width: 80%;
-    margin: auto;
+.trais{
+    position: absolute;
+    background: #fefefe;
+    width: 1px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    
+    
+}
+.trais2{
+    position: absolute;
+    background: #fefefe;
+    width: 1px;
+    height: 100px;
+    left: 20%;
+    top: 20%;
+    z-index: 9999;
+    
+    
+}
+.trais3{
+    position: absolute;
+    background: #fefefe;
+    width: 1px;
+    height: 100px;
+    left: 40%;
+    top: 40%;
+    z-index: 9999;
+    
+    
+}
+.trais4{
+    position: absolute;
+    background: #fefefe;
+    width: 1px;
+    height: 100px;
+    left: 60%;
+    top: 60%;
+    z-index: 9999;
+    
+    
+}
+.trais5{
+    position: absolute;
+    background: #fefefe;
+    width: 1px;
+    height: 100px;
+    left: 80%;
+    top: 80%;
+    z-index: 9999;
+    
+    
 }
 
-/* ///// .cacheTexte2 ///// */
 
-.cacheTexte2 {
-
-
-    width: 80%;
-    margin: 20px auto auto auto;
-
-}
-
-/* ////// cacheJS ///// */
-
-.cacheJS {
-
-    width: 80%;
-    margin: 20px auto auto auto;
-
-
-
-}
