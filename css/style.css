@@ -83,6 +83,8 @@ span {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    
+    
 }
 
 /* ///// IMAGE RESPONSIVE 1 ////// */
@@ -166,7 +168,7 @@ span {
 
 .cacheTexte1{
     
-    width: 100%;
+    width: 80%;
 }
 
 @media all and (min-width: 1000px){
@@ -250,6 +252,8 @@ span {
 
 /* ////// DIV COLOR ///// */
 
+@media all and (min-width: 1000px){
+
 .colorimg, .colortxt1, .colortxt2, .colorjs  {
 
     position: absolute;
@@ -262,7 +266,7 @@ span {
     opacity: 1;
 
 
-}
+    } }
 
 
 .colortxt2{
