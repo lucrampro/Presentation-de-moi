@@ -171,6 +171,7 @@ span {
 .cacheTexte1 {
 
     width: 80%;
+    margin-left: 10%;
 }
 
 @media all and (min-width: 1000px) {
@@ -303,7 +304,7 @@ span {
     height: 100%;
     width: 20%;
     left: 20%;
-    top: 0;
+    bottom: 0;
     background: #fe4d4d;
 
 
@@ -325,7 +326,7 @@ span {
     height: 100%;
     width: 20%;
     left: 60%;
-    top: 0;
+    bottom: 0;
     background: #fe4d4d;
 
 
@@ -410,7 +411,7 @@ span {
 .trais {
     position: absolute;
     background: #fefefe;
-    width: 1px;
+    width: 0.5px;
     height: 100px;
     left: 0;
     top: 0;
@@ -422,7 +423,7 @@ span {
 .trais2 {
     position: absolute;
     background: #fefefe;
-    width: 1px;
+    width: 0.5px;
     height: 100px;
     left: 20%;
     top: 20%;
@@ -434,7 +435,7 @@ span {
 .trais3 {
     position: absolute;
     background: #fefefe;
-    width: 1px;
+    width: 0.5px;
     height: 100px;
     left: 40%;
     top: 40%;
@@ -446,7 +447,7 @@ span {
 .trais4 {
     position: absolute;
     background: #fefefe;
-    width: 1px;
+    width: 0.5px;
     height: 100px;
     left: 60%;
     top: 60%;
@@ -458,7 +459,7 @@ span {
 .trais5 {
     position: absolute;
     background: #fefefe;
-    width: 1px;
+    width: 0.5px;
     height: 100px;
     left: 80%;
     top: 80%;
