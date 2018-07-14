@@ -44,12 +44,14 @@
 }
 
 /* ///// STYLE DU SITE ///// */
-html{
+
+html {
     position: relative;
 }
 
 body {
     height: 100vh;
+    width: 100vw;
     background: #fefefe;
     position: absolute;
 
@@ -75,7 +77,7 @@ span {
 
     position: relative;
     display: none;
-            
+
 }
 
 .img img {
@@ -83,8 +85,8 @@ span {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    
-    
+
+
 }
 
 /* ///// IMAGE RESPONSIVE 1 ////// */
@@ -98,7 +100,7 @@ span {
         height: 100vh;
         width: 0%;
         overflow: hidden;
-       
+
     }
 
     .img img {
@@ -140,17 +142,17 @@ span {
 }
 
 
-@media all and (min-width: 1000px){
-    
-    
-    .contenu h1{
-        
+@media all and (min-width: 1000px) {
+
+
+    .contenu h1 {
+
         font-size: 5rem;
-     margin-top: 20%; 
+        margin-top: 20%;
         opacity: 0;
-        
+
     }
-    
+
 }
 
 
@@ -166,34 +168,34 @@ span {
 
 }
 
-.cacheTexte1{
-    
+.cacheTexte1 {
+
     width: 80%;
 }
 
-@media all and (min-width: 1000px){
-    
-    
-    
+@media all and (min-width: 1000px) {
+
+
+
     .contenu .txt1 {
-        
-        
+
+
         font-size: 2rem;
         margin-top: 0;
         width: 400px;
-        
+
     }
-    
-    
-    .cacheTexte1{
-        
+
+
+    .cacheTexte1 {
+
         position: absolute;
         margin-left: 15%;
         width: 0;
         overflow: hidden;
     }
-    
-    
+
+
 }
 
 
@@ -222,65 +224,68 @@ span {
 
 
 
-@media all and (min-width: 1000px){
-    
-    
-    .contenu .js{
-        
+@media all and (min-width: 1000px) {
 
-    font-size: 5rem;
-    line-height: 80px;
+
+    .contenu .js {
+
+
+        font-size: 5rem;
+        line-height: 80px;
         opacity: 0;
-     
+
     }
-    
-    .contenu .jss{
-        
+
+    .contenu .jss {
+
         font-size: 6rem;
     }
-    
-    .cacheJS{
-        
+
+    .cacheJS {
+
         width: 100%;
         position: absolute;
         top: 60%;
     }
-    
+
 }
 
 
 
 /* ////// DIV COLOR ///// */
 
-@media all and (min-width: 1000px){
+@media all and (min-width: 1000px) {
 
-.colorimg, .colortxt1, .colortxt2, .colorjs  {
+    .colorimg,
+    .colortxt1,
+    .colortxt2,
+    .colorjs {
 
-    position: absolute;
-    height:100%;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    background: #fe4d4d;
-    z-index: 10;
-    opacity: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        background: #fe4d4d;
+        z-index: 10;
+        opacity: 1;
 
 
-    } }
+    }
+}
 
 
-.colortxt2{
-    
-   height: 85%;
+.colortxt2 {
+
+    height: 85%;
     right: 20%;
     width: 80%;
     opacity: 0;
-    
+
 }
 
 
 /* ///// VOLET ////// */
-
 
 .volet {
     position: absolute;
@@ -337,7 +342,7 @@ span {
 
 }
 
-.trais{
+.trais {
     position: absolute;
     background: #fefefe;
     width: 1px;
@@ -345,10 +350,11 @@ span {
     left: 0;
     top: 0;
     z-index: 9999;
-    
-    
+
+
 }
-.trais2{
+
+.trais2 {
     position: absolute;
     background: #fefefe;
     width: 1px;
@@ -356,10 +362,11 @@ span {
     left: 20%;
     top: 20%;
     z-index: 9999;
-    
-    
+
+
 }
-.trais3{
+
+.trais3 {
     position: absolute;
     background: #fefefe;
     width: 1px;
@@ -367,10 +374,11 @@ span {
     left: 40%;
     top: 40%;
     z-index: 9999;
-    
-    
+
+
 }
-.trais4{
+
+.trais4 {
     position: absolute;
     background: #fefefe;
     width: 1px;
@@ -378,10 +386,11 @@ span {
     left: 60%;
     top: 60%;
     z-index: 9999;
-    
-    
+
+
 }
-.trais5{
+
+.trais5 {
     position: absolute;
     background: #fefefe;
     width: 1px;
@@ -389,8 +398,6 @@ span {
     left: 80%;
     top: 80%;
     z-index: 9999;
-    
-    
+
+
 }
-
-
