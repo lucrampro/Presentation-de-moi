@@ -37,7 +37,7 @@ TweenMax.to(".trais5", 0.3, {
             onComplete: function () {
                 //        LES BLOC DE COULERU APPARAISSE
                 TweenMax.to(".img", 0.5, {
-                    width: "50%"
+                    width: "50%",
                 });
                 TweenMax.to(".cacheTexte1", 0.5, {
                     width: "80%",

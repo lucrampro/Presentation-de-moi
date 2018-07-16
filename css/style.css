@@ -246,7 +246,7 @@ span {
 
         width: 100%;
         position: absolute;
-        top: 60%;
+        top: 62%;
     }
 
 }
@@ -343,6 +343,8 @@ span {
 
 }
 
+/* ///// TRAIS ///// */
+
 .trais {
     position: absolute;
     background: #fefefe;
@@ -404,69 +406,69 @@ span {
 }
 
 
-@media all and (min-width: 1000px){
-    
-    
-    
-.trais {
-    position: absolute;
-    background: #fefefe;
-    width: 0.5px;
-    height: 100px;
-    left: 0;
-    top: 0;
-    z-index: 9999;
+@media all and (min-width: 1000px) {
 
 
-}
 
-.trais2 {
-    position: absolute;
-    background: #fefefe;
-    width: 0.5px;
-    height: 100px;
-    left: 20%;
-    top: 20%;
-    z-index: 9999;
-
-
-}
-
-.trais3 {
-    position: absolute;
-    background: #fefefe;
-    width: 0.5px;
-    height: 100px;
-    left: 40%;
-    top: 40%;
-    z-index: 9999;
+    .trais {
+        position: absolute;
+        background: #fefefe;
+        width: 0.5px;
+        height: 100px;
+        left: 0;
+        top: 0;
+        z-index: 9999;
 
 
-}
+    }
 
-.trais4 {
-    position: absolute;
-    background: #fefefe;
-    width: 0.5px;
-    height: 100px;
-    left: 60%;
-    top: 60%;
-    z-index: 9999;
-
-
-}
-
-.trais5 {
-    position: absolute;
-    background: #fefefe;
-    width: 0.5px;
-    height: 100px;
-    left: 80%;
-    top: 80%;
-    z-index: 9999;
+    .trais2 {
+        position: absolute;
+        background: #fefefe;
+        width: 0.5px;
+        height: 100px;
+        left: 20%;
+        top: 20%;
+        z-index: 9999;
 
 
-}
-    
-    
+    }
+
+    .trais3 {
+        position: absolute;
+        background: #fefefe;
+        width: 0.5px;
+        height: 100px;
+        left: 40%;
+        top: 40%;
+        z-index: 9999;
+
+
+    }
+
+    .trais4 {
+        position: absolute;
+        background: #fefefe;
+        width: 0.5px;
+        height: 100px;
+        left: 60%;
+        top: 60%;
+        z-index: 9999;
+
+
+    }
+
+    .trais5 {
+        position: absolute;
+        background: #fefefe;
+        width: 0.5px;
+        height: 100px;
+        left: 80%;
+        top: 80%;
+        z-index: 9999;
+
+
+    }
+
+
 }
