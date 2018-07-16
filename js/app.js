@@ -36,17 +36,17 @@ TweenMax.to(".trais5", 0.3, {
             height: "0",
             onComplete: function () {
                 //        LES BLOC DE COULERU APPARAISSE
-                TweenMax.to(".img", 0.5, {
+                TweenMax.to(".img", 0.8, {
                     width: "50%",
                 });
-                TweenMax.to(".cacheTexte1", 0.5, {
+                TweenMax.to(".cacheTexte1", 0.8, {
                     width: "80%",
                     onComplete() {
                         //            L'IMAGE ET LE TEXTE SE DEVOILE
-                        TweenMax.to(".colorimg", 0.5, {
+                        TweenMax.to(".colorimg", 0.8, {
                             width: "0"
                         });
-                        TweenMax.to(".colortxt1", 0.5, {
+                        TweenMax.to(".colortxt1", 0.8, {
                             width: "0"
                         });
                         TweenMax.to("h1", 0.5, {
